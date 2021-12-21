@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <tech-list>
+        <!--ISO 14443-4-->
+        <tech>android.nfc.tech.IsoDep</tech>
+        <!--ISO 14443-3A-->
+        <tech>android.nfc.tech.NfcA</tech>
+    </tech-list>
+
+</resources>
