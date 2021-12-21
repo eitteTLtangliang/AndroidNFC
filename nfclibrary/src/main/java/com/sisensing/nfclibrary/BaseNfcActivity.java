@@ -4,7 +4,7 @@ import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.sisensing.nfclibrary.listener.NFCCListener;
+import com.sisensing.nfclibrary.listener.NFCListener;
 import com.sisensing.nfclibrary.utils.NFCUtils;
 import com.sisensing.nfclibrary.utils.ReadDataUtils;
 import com.sisensing.nfclibrary.utils.WriteDataUtils;
@@ -21,7 +21,7 @@ import com.sisensing.nfclibrary.utils.WriteDataUtils;
 public abstract class BaseNfcActivity extends AppCompatActivity {
 
     private String nfcText;
-    private NFCCListener listener;
+    private NFCListener listener;
 
     @Override
     protected void onStart() {
@@ -51,7 +51,7 @@ public abstract class BaseNfcActivity extends AppCompatActivity {
 
     protected abstract void readNFCInfo(String info);
 
-    protected void writeNFCInfo(String nfcText, NFCCListener listener) {
+    protected void writeNFCInfo(String nfcText, NFCListener listener) {
         this.nfcText = nfcText;
         this.listener = listener;
     }

@@ -46,10 +46,4 @@ public class WriteDataUtils {
         return writeTag(ndefMessage, detectedTag);
     }
 
-    public static boolean dealNFCInfo(Tag detectedTag, String info) {
-        if (TextUtils.isEmpty(info)) return false;
-        NdefMessage ndefMessage = new NdefMessage(new NdefRecord[]{createTextRecord(info)});
-        return writeTag(ndefMessage, detectedTag);
-    }
-
 }

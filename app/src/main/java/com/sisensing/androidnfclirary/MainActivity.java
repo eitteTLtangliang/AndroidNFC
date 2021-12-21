@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.sisensing.nfclibrary.BaseNfcActivity;
-import com.sisensing.nfclibrary.listener.NFCCListener;
+import com.sisensing.nfclibrary.listener.NFCListener;
 
 public class MainActivity extends BaseNfcActivity {
 
@@ -29,7 +29,7 @@ public class MainActivity extends BaseNfcActivity {
 
                 break;
             case R.id.btWrite:
-                writeNFCInfo(etWrite.getText().toString(), new NFCCListener() {
+                writeNFCInfo(etWrite.getText().toString(), new NFCListener() {
                     public void onProcess(boolean state) {
                         Log.e(TAG, "数据写入："+state);
                     }
