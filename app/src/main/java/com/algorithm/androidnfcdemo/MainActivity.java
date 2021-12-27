@@ -1,10 +1,12 @@
-package com.sisensing.androidnfclirary;
+package com.algorithm.androidnfcdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.sisensing.nfclibrary.BaseNfcActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,9 +22,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, ReadNFCInfoActivity.class));
                 break;
             case R.id.btWrite:
-               startActivity(new Intent(this, WriteNFCInfoActivity.class));
+                startActivity(new Intent(this, WriteNFCInfoActivity.class));
                 break;
         }
     }
-
 }

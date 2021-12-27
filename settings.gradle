@@ -1,2 +1,2 @@
-include ':app', ':nfclibrary'
-rootProject.name='AndroidNFCLirary'
+include ':app'
+rootProject.name='AndroidNFCDemo'

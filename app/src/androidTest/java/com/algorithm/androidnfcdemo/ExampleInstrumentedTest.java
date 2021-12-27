@@ -1,4 +1,4 @@
-package com.sisensing.androidnfclirary;
+package com.algorithm.androidnfcdemo;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.algorithm.androidnfclirary", appContext.getPackageName());
+        assertEquals("com.algorithm.androidnfcdemo", appContext.getPackageName());
     }
 }

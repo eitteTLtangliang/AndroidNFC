@@ -1,4 +1,4 @@
-package com.sisensing.nfclibrary;
+package com.algorithm.androidnfcdemo;
 
 import org.junit.Test;
 

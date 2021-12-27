@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sisensing.androidnfclirary.WriteNFCInfoActivity">
+    tools:context=".WriteNFCInfoActivity">
 
     <TextView
         android:id="@+id/tvBack"
@@ -26,7 +26,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="120dp"
-        android:textColor="#232323"
+        android:paddingTop="5dp"
+        android:textColor="#fff"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
         android:textSize="16sp"

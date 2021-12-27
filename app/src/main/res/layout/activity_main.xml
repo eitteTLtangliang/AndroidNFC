@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/btRead"
-        android:layout_width="220dp"
-        android:layout_height="46dp"
+        android:layout_width="260dp"
+        android:layout_height="66dp"
         android:layout_gravity="center_horizontal"
         android:text="读数据"
         android:onClick="doClick"
@@ -17,10 +17,10 @@
 
     <Button
         android:id="@+id/btWrite"
-        android:layout_width="220dp"
-        android:layout_height="46dp"
+        android:layout_width="260dp"
+        android:layout_height="66dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="写数据"
         android:onClick="doClick"/>
 
