@@ -52,3 +52,9 @@
 -keep class com.sisensing.nfclibrary.BaseNfcActivity{
     protected *;
 }
+-keep class com.sisensing.nfclibrary.listener.NFCListener{
+    public *;
+}
+-keep class com.sisensing.nfclibrary.NfcUtils{
+    public *;
+}

@@ -6,56 +6,21 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="NFC Demo"
-        android:gravity="center"
-        android:textSize="22sp"
-        android:textColor="#FFF"
-        android:textStyle="bold"
-        android:paddingTop="20dp"
-        android:paddingBottom="8dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@color/colorPrimary"/>
-
-    <TextView
-        android:id="@+id/tvReader"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:textColor="#232323"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp"
-        android:paddingTop="8dp"
-        android:textSize="16sp"
-        android:text=""
-        android:gravity="left"
-        android:background="#BFEBE3"/>
-
     <Button
         android:id="@+id/btRead"
-        android:layout_width="match_parent"
+        android:layout_width="220dp"
         android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
         android:text="读数据"
-        android:onClick="doClick"/>
-
-    <EditText
-        android:id="@+id/etWrite"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:textColor="#232323"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp"
-        android:layout_marginTop="20dp"
-        android:textSize="16sp"
-        android:gravity="left"
-        android:hint="输入要写入的数据"
-        android:background="#7B6E96"/>
+        android:onClick="doClick"
+        android:layout_marginTop="220dp"/>
 
     <Button
         android:id="@+id/btWrite"
-        android:layout_width="match_parent"
+        android:layout_width="220dp"
         android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
         android:text="写数据"
         android:onClick="doClick"/>
 

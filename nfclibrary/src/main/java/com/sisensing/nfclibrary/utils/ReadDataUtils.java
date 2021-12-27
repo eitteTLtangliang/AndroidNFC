@@ -46,9 +46,8 @@ public class ReadDataUtils {
 
         try {
             byte[] payload = ndefRecord.getPayload();
-            String textEncoding = ((payload[0] & 0x80) == 0) ? "UTF-8" : "UTF-16";
+            String textEncoding = ((payload[0] & 0x80) == 0) ? "UTF-8" : "UTF-16"; //"US-ASCII"
             int languageCodeLength = payload[0] & 0x3f;
-            // String languageCode = new String(payload, 1, languageCodeLength, "US-ASCII");
             String textRecord = new String(payload, languageCodeLength + 1, payload.length - languageCodeLength - 1, textEncoding);
             return textRecord;
         } catch (Exception e) {
